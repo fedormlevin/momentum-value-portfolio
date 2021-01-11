@@ -278,13 +278,13 @@ fig.show()
 ## Backtesting to approach reallocation
 According to 2019 prices the best returns achieved with no reallocation during the year:
 
-SP 500 1 Year Return:  0.1708361982254436
-My Portfolio (No Reallocation) 1 Year Return:  0.3973037985387785
+SP 500 1 Year Return:  0.1708361982254436<br>
+My Portfolio (No Reallocation) 1 Year Return:  **0.3973037985387785**
 
-SP 500 1 Year Return:  0.1708361982254436
+SP 500 1 Year Return:  0.1708361982254436<br>
 My Portfolio (Monthly Reallocation) 1 Year Return:  0.29028188166406055
 
-SP 500 1 Year Return:  0.1708361982254436
+SP 500 1 Year Return:  0.1708361982254436<br>
 My Portfolio (Quater Reallocation) 1 Year Return:  0.19458675287966987
 
 SP 500 1 Year Return:  0.1708361982254436<br>
