@@ -1,4 +1,3 @@
-![image info](./newplot.png)
 # momentum-value-portfolio
 Momentum vs Value Portfolio of 50-best S&amp;P500 stocks
 # Summary
@@ -234,6 +233,7 @@ my_port_value_tracker['Daily Return'] = my_port_value_tracker['$ Value'].pct_cha
 my_port_value_tracker
 ```
 ## Visualizing comparison with benchmark using plotly
+![image info](./newplot.png)
 ```python
 # Create figure with secondary y-axis
 fig = make_subplots(specs=[[{"secondary_y": True}]])
