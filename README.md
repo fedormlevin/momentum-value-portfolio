@@ -1,7 +1,5 @@
 # momentum-value-portfolio
 Momentum vs Value Portfolio of 50-best S&amp;P500 stocks
-# sentiment-amazon-markers-reviews
-Sentiment A
 # Summary
 I am using "yahoofinancials" and "yfinance" libraries to access prices and value indicators of stocks in SP500 index, constructing portfolio of 50 best momentum/value stocks and back test reallocation approaches
 ## Dependencies
