@@ -287,7 +287,7 @@ My Portfolio (Monthly Reallocation) 1 Year Return:  0.29028188166406055
 SP 500 1 Year Return:  0.1708361982254436
 My Portfolio (Quater Reallocation) 1 Year Return:  0.19458675287966987
 
-SP 500 1 Year Return:  0.1708361982254436
+SP 500 1 Year Return:  0.1708361982254436<br>
 My Portfolio (Once a Year Reallocation) 1 Year Return:  0.29643392705957616
 ```python
 y_port_value_tracker_monthly_reallocation
