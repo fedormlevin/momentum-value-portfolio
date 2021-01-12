@@ -279,21 +279,24 @@ fig.show()
 ## Backtesting to approach reallocation
 According to 2019 prices the best returns achieved with no reallocation during the year:
 
-SP 500 1 Year Return:  0.1708361982254436<br>
-My Portfolio (No Reallocation) 1 Year Return:  **0.3973037985387785**
+SP 500 1 Year Return:  0.14830536414326212<br>
+My Portfolio (No Reallocation) 1 Year Return:  **0.3907687604295591**
 
-SP 500 1 Year Return:  0.1708361982254436<br>
-My Portfolio (Monthly Reallocation) 1 Year Return:  0.29028188166406055
+SP 500 1 Year Return:  0.14830536414326212<br>
+My Portfolio (Monthly Reallocation) 1 Year Return:  0.2945947087915368
 
-SP 500 1 Year Return:  0.1708361982254436<br>
-My Portfolio (Quater Reallocation) 1 Year Return:  0.19458675287966987
+SP 500 1 Year Return:  0.14830536414326212<br>
+My Portfolio (Monthly Reallocation) 1 Year Return:  0.20525109224255145
 
 SP 500 1 Year Return:  0.1708361982254436<br>
 My Portfolio (Once a Year Reallocation) 1 Year Return:  0.29643392705957616
 ```python
-y_port_value_tracker_monthly_reallocation
-sum_sp500 = compare['SP Return'].sum()
+col = ['Date', '$ Value', 'Daily Return']
+my_port_value_tracker_onceayear_reallocation = pd.DataFrame(port_value_tracker_list, columns=col)
+my_port_value_tracker_onceayear_reallocation['Daily Return'] = my_port_value_tracker_onceayear_reallocation['$ Value'].pct_change()
+my_port_value_tracker_onceayear_reallocation
+sum_sp500 = (compare['SP Return']+1).prod()-1
 print('SP 500 1 Year Return: ',sum_sp500)
-sum_prt = my_port_value_tracker_monthly_reallocation['Daily Return'].sum()
+sum_prt = (my_port_value_tracker_onceayear_reallocation['Daily Return']+1).prod()-1
 print('My Portfolio (Monthly Reallocation) 1 Year Return: ',sum_prt)
 ```
