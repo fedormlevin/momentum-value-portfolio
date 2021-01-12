@@ -61,8 +61,8 @@ all_prices.drop(columns=['Close', 'High', 'Low', 'Volume', 'Dividends', 'Stock S
 all_prices['Date'] = pd.to_datetime(all_prices['Date'])
 all_prices.head()
 ```
-## Calculating returns
-In order to calculate returns I need to get prices for specic periods with accordance to NYSE calendar:
+## Calculating price returns
+In order to calculate price returns I need to get prices for specic periods with accordance to NYSE calendar:
 ```python
 nyse = mcal.get_calendar('NYSE')
 
@@ -96,7 +96,7 @@ all_prices_five['6 Month Return'] = np.nan
 all_prices_five['1 Year Return'] = np.nan
 all_prices_five.head()
 ```
-Calculating returns:
+Calculating price returns:
 ```python
 for i in sp_list:
     try:
