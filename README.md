@@ -233,7 +233,7 @@ my_port_value_tracker['Daily Return'] = my_port_value_tracker['$ Value'].pct_cha
 my_port_value_tracker
 ```
 ## Visualizing comparison with benchmark using plotly
-![image info](./newplot.png)
+![image info](./daily_price.png)
 ```python
 # Create figure with secondary y-axis
 fig = make_subplots(specs=[[{"secondary_y": True}]])
